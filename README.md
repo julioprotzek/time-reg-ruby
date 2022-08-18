@@ -8,9 +8,18 @@ bundle exec rackup -p 9292 config.ru
 
 Access on `http://localhost:9292`
 
-
-## Tests
-Where `meme.rb` is the test file you want to exercise
+## Specs
+All specs
 ```bash
-bundle exec ruby ./tests/meme.rb
+rspec spec
+```
+
+Single file
+```bash
+rspec spec/game_spec.rb
+```
+
+Target a line
+```bash
+rspec spec/game_spec.rb:7
 ```
